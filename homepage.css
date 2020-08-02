@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+* {
+    font-family: serif;
+}
+.f-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.f-item {
+
+}
+#header {
+    border-bottom: dotted 2px pink;
+    width: 100%;
+}
+#header h1 {    
+    text-align: center;
+    color: orange;
+    height: 30px;
+    margin: 30px 3%;
+    text-shadow: 1px 1px 2px darkblue;
+}
+#header p {
+    text-align: center;
+}
+#contents {
+    width: 68%;
+    min-height: 50px;
+    padding: 3px;
+    font-size: 5rem;
+    border-right: dotted 2px pink;
+    background-color: rgb(255, 255, 255);
+}
+#contents p {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 0;
+}
+#menu {
+    min-height: 500px;
+    width: 30%;
+    padding: 3px;
+    background-color: rgb(255, 255, 255);
+}
+#menu-header {
+    background-color: rgb(240, 255, 218);
+    width: 100%;
+    margin: 0;
+    max-height: 50px;
+}
+#menu-header p {
+    text-align: center;
+    font-size: 2em;
+    padding: 0;
+    margin: 0;
+    text-shadow: 1px 1px 2px rgb(157, 157, 255);
+}
+#about-me p {
+    margin: 0;
+    height: auto;
+}
+#icon {
+    float: left;
+    text-align: center;
+    margin: 0px;
+    width: 40%;
+    background-color: rgb(255, 233, 233);
+}
+#icon p {
+    margin: 0;
+    min-width: 50px;
+    text-align: center;
+}
+img {
+    width: 100%;
+    min-width: 100px;
+    max-width: 300px;
+    height: auto;
+}
+#footer {
+    border-top: dotted 2px pink;
+    width: 100%;
+    background-color: rgb(245, 252, 255);
+}
+#footer p {
+    text-align: center;
+    font-size: small;
+    margin: 0;
+}
