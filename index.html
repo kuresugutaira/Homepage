@@ -1,51 +1,108 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <title> ご のホームページ</title>
+  <title> くれすぐたいらのページ</title>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="homepage.css">
+  <script type="text/javascript" src="node_modules\jquery\dist\jquery.js"></script>
+  <script src="homepage.js"></script>
 </head>
 <body>
-  <div class="f-container">
-    <div id="header" class="f-item">
-      <h1> ご のホームページ</h1>
-      <p>
-        ごのホームページです。ごの作ったゲームやブログについて書いていきます。
-      </p>
+  <div id="body-container">
+    <div id="header-container" class="body-item">
+      <a href="#about" class="header-item">
+        <p>About</p>
+      </a>
+      <a href="#works" class="header-item">
+        <p>Works</p>
+      </a>
+      <a href="#notice" class="header-item">
+        <p>Notice</p>
+      </a>
+      <a href="#contact" class="header-item">
+        <p>Contact</p>
+      </a>
     </div>
-    <div id="contents" class="articles-container" class="f-item">
-      <div class="article">
-        <div class="content">
-          <a href="https://qiita.com/kuresugutaira"></a>
-          <h2>
-            Qiitaを開設しました
-          </h2>
-          <p>
-            Qiitaを開設しました。技術系の記事はここに載せていきます。
-          </p>
+    <div id="contents-container" class="body-item">
+      <div id="about" class="contents-item">
+        <h1>About</h1>
+        <div id="profile">
+          <img id="about-img" class="about-item" src="kuresugutaira_icon.jpg" alt="Kuresugutaira's icon">
+          <div class="about-item">
+            <h2>くれすぐたいら</h2>
+            <p>
+              情報系の学部に所属している大学2年生です。
+              UnityとC#を用いてゲームを制作したり、作曲したりしています。
+              創作全般が好きで、良く漫画やアニメ、イラスト等を見ています。
+              ファンタジーの世界にあこがれていて、ファンタジーなゲームが作りたいとよく思っています。
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-    <div id="menu" class="f-item">
-      <div id="menu-header">
-        <p>
-          Menu
-        </p>
-      </div>
-      <div id="about-me">
-        <div id="icon">
-          <img src="kuresugutaira_icon.jpg" alt="ごのアイコン"/>
-          <p>ごのアイコン</p>
+      <div id="works" class="contents-item">
+        <h1>Works</h1>
+        <div id="works-container">
+          <a href="https://unityroom.com/games/takarabako-atsume", class="works-content">
+            <img class="works-icon" src="screenshots/game_icon.png" alt="GameIcon">
+            <div class="content-description">
+              <h2>
+                宝箱集め
+              </h2>
+              <p>
+                unity1weekに向けて制作したゲームです<br>
+                これからも追加コンテンツを作っていきます
+              </p>
+            </div>
+          </a>
+          <a href="https://www.youtube.com/watch?v=9JUwoSUZA34" class="works-content">
+            <img class="works-icon" src="screenshots/pikatyu1.jpg" alt="ContentIcon">
+            <div class="content-description">
+              <h2>
+                コンテンツ2
+              </h2>
+              <p>
+                制作物の説明<br>
+                これがどうのこうの
+              </p>
+            </div>
+          </a>
+          <a href="https://www.youtube.com/watch?v=9JUwoSUZA34" class="works-content">
+            <img class="works-icon" src="screenshots/pikatyu2.jpg" alt="ContentIcon">
+            <div class="content-description">
+              <h2>
+                コンテンツ3
+              </h2>
+              <p>
+                制作物の説明<br>
+                これがどうのこうの
+              </p>
+            </div>
+          </a>
+          <a href="https://www.youtube.com/watch?v=9JUwoSUZA34" class="works-content">
+            <img class="works-icon" src="screenshots/pikatyu3.jpg" alt="ContentIcon">
+            <div class="content-description">
+              <h2>
+                コンテンツ4
+              </h2>
+              <p>
+                制作物の説明<br>
+                これがどうのこうの
+              </p>
+            </div>
+          </a>
         </div>
-        <p>
-          大学一年生です。Unityを使ってゲームを作ったり、F#で競プロしたり、いろんなことをしています。
-          アプリ開発にも興味があります。
-        </p>
+      </div>
+      <div id="notice" class="contents-item">
+        <h1>Notice</h1>
+      </div>
+      <div id="contact" class="contents-item">
+        <h1>Contact</h1>
       </div>
     </div>
-    <div id="footer" class="f-item">
+    <div id="footer-container" class="body-item">
       <p>&copy; 2020 kuresugutaira</p>
     </div>
   </div>
 </body>
 </html>
+
