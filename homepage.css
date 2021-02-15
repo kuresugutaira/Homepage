@@ -29,16 +29,16 @@ body {
 .header-item {
     display: inline-block;
     width: 20%;
-    border-top: 0px solid white;
-    border-bottom: 0px solid black;
-    border-left: 1px dotted black;
-    border-right: 1px dotted black;
+    margin: 10px;
+    border-bottom: 2px solid rgba(121, 121, 121, 0.5);
+    border-radius: 15px;
 }
 .header-item p{
     text-align: center;
     font-family: sans-serif;
     font-size: 1.2rem;
     font-weight: 800;
+    margin: 5px;
 }
 #contents-container {
     display: flex;
@@ -64,10 +64,14 @@ body {
     flex-direction: column;
     margin-bottom: 10px;
 }
+#about-img {
+    margin: 10px 50px 10px 50px;
+    width: 220px;
+    border-radius: 120px;
+}
 #profile {
     display: flex;
     min-width: 500px;
-    width: 100%;
     flex-flow: row wrap;
     justify-content: center;
 }
@@ -77,38 +81,37 @@ body {
 #profile p {
     word-break: break-all;
     padding: 10px;
-    max-width: 1200px;
-}
-#about-img {
-    padding :10px;
-    width: 220px;
+    max-width: 1000px;
 }
 #works-container {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     margin-bottom: 10px;
 }
 .works-content {
     display: flex;
     width: 800px;
-    height: 250px;
+    min-height: 200px;
+    max-height: 500px;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    margin: 10px 30px 10px 30px;
-    background: rgba(221, 221, 221, 0.5);
+    margin: 15px 30px 15px 30px;
+    background: rgba(219, 219, 219, 0.5);
+    border-radius: 10px;
 }
 .works-icon {
     width: 220px;
-    max-height: 230px;
+    height: 220px;
     padding: 10px;
 }
 .content-description {
     display: flex;
     padding: 10px;
     flex-direction: column;
+    justify-content: center;
     width: 500px;
 }
 .content-description h2 {
@@ -121,6 +124,56 @@ body {
     margin: 5px;
     text-align: center;
     font-size: 1.2rem;
+}
+#notice-container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+#notice-container a {
+    background: rgba(219, 219, 219, 0.5);
+    border-radius: 10px;
+    margin: 15px 30px 15px 30px;
+    width: 80%;
+    min-width: 200px;
+    min-height: 100px;
+    max-height: 250px;
+}
+#notice-container a h2 {
+    text-align: center;
+}
+#notice-container a p {
+    text-align: center;
+    word-break: break-all;
+}
+#contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+#contact-container p {
+    font-weight: 500;
+    margin-top: 0;
+}
+#icons-container {
+    display: flex;
+    min-height: 100px;
+}
+#icons-container a {
+    margin: 15px 15px 15px 15px;
+}
+#twitter-icon {
+    color: rgb(22, 115, 255);
+}
+#soundcloud-icon {
+    color: white;
+    background-color: rgb(255, 136, 0);
+    height : 50px;
+    border-radius: 5px;
 }
 #footer-container {
     border-top: solid 2px rgba(189, 189, 189, 0.5);

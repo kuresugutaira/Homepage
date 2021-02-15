@@ -2,16 +2,40 @@ $(function(){
     var speed = 200;
     $(".works-content").hover(
         function(){
-            $(this).animate({
+            $(this).stop().animate({
                 "marginTop": "0px",
                 "marginBottom": "20px"
             },
             speed)
         },
         function(){
-            $(this).animate({
+            $(this).stop().animate({
                 "marginTop": "10px",
                 "marginBottom": "10px"
+            },
+            speed)
+        }
+    );
+    $(".works-content").click(
+        function(){
+            location.href="https://unityroom.com/games/takarabako-atsume"
+        }
+    )
+});
+$(function(){
+    var speed = 200;
+    $("#notice-container a").hover(
+        function(){
+            $(this).stop().animate({
+                "marginTop": "5px",
+                "marginBottom": "25px"
+            },
+            speed)
+        },
+        function(){
+            $(this).stop().animate({
+                "marginTop": "15px",
+                "marginBottom": "15px"
             },
             speed)
         }
@@ -27,7 +51,7 @@ $(function(){
         var speed = 500;
         var href= $(this).attr("href");
         var target = $(href == "#" || href == "" ? 'html' : href);
-        var position = target.offset().top - 82;
+        var position = target.offset().top - 82; //この82はヘッダーの高さ
         $("html, body").animate({scrollTop:position}, speed, "swing");
         return false;
     });
@@ -35,26 +59,43 @@ $(function(){
 $(function(){
     $(".header-item").hover(
         function(){
-            $(this).animate({
-                "borderBottomWidth": "3px",
-                "borderTopWidth": "3px",
-                "borderLeftWidth": "1px",
-                "borderRightWidth": "1px",
-                "marginTop": "5px"
+            $(this).stop().animate({
+                "marginTop": "15px",
+                "marginBottom": "5px",
+                "width": "22%"
             },
-            300,
-            "swing");
+            300,);
         },
         function(){
-            $(this).animate({
-                "borderBottomWidth" : "0px",
-                "borderTopWidth": "0px",
-                "borderLeftWidth": "1px",
-                "borderRightWidth": "1px",
-                "marginTop": "0px"
+            $(this).stop().animate({
+                "margin":"10px",
+                "width": "20%"
             },
-            300,
-            "swing");
+            300,);
+        }
+    )
+});
+$(function(){
+    var speed = 200;
+    $("#icons-container a").hover(
+        function(){
+            $(this).stop().animate({
+                "marginTop": "5px",
+                "marginBottom": "25px"
+            },
+            speed)
+        },
+        function(){
+            $(this).stop().animate({
+                "marginTop": "15px",
+                "marginBottom": "15px"
+            },
+            speed)
+        }
+    );
+    $(".works-content").click(
+        function(){
+            location.href="https://unityroom.com/games/takarabako-atsume"
         }
     )
 });
