@@ -1,2 +1,2 @@
 # Homepage
-ごのホームページです
+ごのホームページです -> https://kuresugutaira.com
