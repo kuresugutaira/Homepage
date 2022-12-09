@@ -44,8 +44,15 @@
 
 .notice_container {
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: column-reverse nowrap;
   justify-content: space-around;
+  min-height: 500px;
+}
+
+.read_more {
+  border: solid 1px;
+  border-radius: 50px;
+  margin: 10px 100px 0 100px;
 }
 
 .twitter {
@@ -59,10 +66,6 @@
 
 .twitter_timeline {
   max-height: 10vh;
-}
-
-.notice_item {
-  margin: 5px 0;
 }
 
 .footer {
