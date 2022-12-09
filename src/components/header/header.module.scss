@@ -11,6 +11,11 @@
   white-space: nowrap;
   align-items: center;
   display: flex;
+  justify-content: space-between;
+  h1 {
+    color: white;
+    letter-spacing: 2px;
+  }
 }
 
 .page_link_container {

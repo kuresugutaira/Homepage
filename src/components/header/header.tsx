@@ -6,6 +6,7 @@ import PageLink from './pageLink/pageLink';
 function Header() {
   return (
     <header className={styles.header}>
+      <h1>Kuresugutaira</h1>
       <span className={styles.page_link_container}>
         <PageLink href='/'>Home</PageLink>
         <PageLink href='about'>About</PageLink>
