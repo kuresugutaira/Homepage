@@ -5,7 +5,7 @@ import Icon from '../components/utils/icon/icon';
 import Notice from '../components/utils/notice/notice';
 import Script from 'next/script';
 
-export default function Home() {
+function Home() {
   return (
     <>
       <Script async src='https://platform.twitter.com/widgets.js'></Script>
@@ -33,6 +33,9 @@ export default function Home() {
         <div className={styles.latest_notice}>
           <h2>最新のお知らせ</h2>
           <div className={styles.notice_container}>
+            <Link href='notice' className={styles.read_more}>
+              もっと見る
+            </Link>
             <Notice
               href='https://kuresugutaira.com/'
               title='ホームページを一新しました'
@@ -72,3 +75,5 @@ export default function Home() {
     </>
   );
 }
+
+export default Home;
