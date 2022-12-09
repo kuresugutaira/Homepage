@@ -1,0 +1,58 @@
+.profile {
+  display: flex;
+  min-width: 500px;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.profile_icon {
+  margin: 0 10px;
+}
+
+.profile_self_intro {
+  display: flex;
+  min-width: 400px;
+  flex-flow: column wrap;
+  justify-content: center;
+  margin: 0 10px;
+  h2 {
+    text-align: center;
+    margin: 20px 0;
+    letter-spacing: 1px;
+  }
+  p {
+    text-align: center;
+    margin: 0;
+  }
+}
+
+.notice_container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.latest_notice {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  text-align: center;
+  min-width: 500px;
+}
+
+.twitter {
+  text-align: center;
+  min-width: 500px;
+}
+
+.twitter_timeline {
+  max-height: 10vh;
+}
+
+.notice_item {
+  margin: 5px 0;
+}
+
+.footer {
+  text-align: center;
+}

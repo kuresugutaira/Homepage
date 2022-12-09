@@ -5,8 +5,8 @@ export default function Icon(): JSX.Element {
   return (
     <Image
       src='/images/kuresugutaira_icon.jpg'
-      height={144}
-      width={144}
+      height={200}
+      width={200}
       alt='kuresugutairaのアイコン'
       className={styles.roundIcon}
     />
