@@ -1,0 +1,18 @@
+.header {
+    padding: 10px;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(26, 26, 26);
+    z-index: 1;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    vertical-align: middle;
+    white-space: nowrap;
+    align-items: center;
+    display: flex;
+}
+
+.page_link_container {
+    display: flex;
+}
