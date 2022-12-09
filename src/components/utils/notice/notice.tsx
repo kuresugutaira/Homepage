@@ -3,13 +3,18 @@ import Link from 'next/link';
 
 type NoticeProps = {
   href: string;
-  children: React.ReactNode;
+  title: string;
+  description: string;
+  date?: string;
+  children?: never;
 };
 
-export default function Notice({ href, children }: NoticeProps): JSX.Element {
+export default function Notice({ href, title, description, date, children }: NoticeProps): JSX.Element {
   return (
     <Link href={href} className={styles.notice}>
-      {children}
+      <h2>{title}</h2>
+      <p>{description}</p>
+      <p className={styles.date}>{date}</p>
     </Link>
   );
 }
