@@ -33,13 +33,23 @@ export default function Home() {
         <div className={styles.latest_notice}>
           <h2>最新のお知らせ</h2>
           <div className={styles.notice_container}>
-            <Notice href='https://kuresugutaira.com/'>
-              <h2>ホームページを一新しました</h2>
-              <p>変更前より情報が見やすくなりました</p>
-            </Notice>
-            <div className={styles.notice_item}>お知らせ1</div>
-            <div className={styles.notice_item}>お知らせ2</div>
-            <div className={styles.notice_item}>お知らせ3</div>
+            <Notice
+              href='https://kuresugutaira.com/'
+              title='ホームページを一新しました'
+              description='変更前より情報が見やすくなりました'
+            />
+            <Notice
+              href='https://unityroom.com/games/takarabako-atsume'
+              title='新作ゲーム 宝箱集め を公開しました'
+              description='タイルを跳ねながら宝箱を集めていくゲームです'
+              date='2021/02/03'
+            />
+            <Notice
+              href='https://soundcloud.com/vyy42cvqfubx/childlike'
+              title='新曲 Childlike を公開しました'
+              description='kawaii future bassの曲です'
+              date='2021/3/25'
+            />
           </div>
         </div>
         <div className={styles.twitter}>
