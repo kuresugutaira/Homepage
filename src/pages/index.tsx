@@ -9,11 +9,6 @@ function Home() {
   return (
     <>
       <Script async src='https://platform.twitter.com/widgets.js'></Script>
-      <Head>
-        <title>くれすぐたいらのページ</title>
-        <meta name='description' content='くれすぐたいらのホームページ' />
-        <link rel='icon' href='/kuresugutaira_fav.ico' />
-      </Head>
 
       <div className={styles.profile}>
         <span className={styles.profile_icon}>
