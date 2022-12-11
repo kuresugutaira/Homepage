@@ -17,7 +17,7 @@ function NoticeCard({ href, title, description, date }: NoticeCardProps): JSX.El
     >
       <h2>{title}</h2>
       <p className={styles.description}>{description}</p>
-      <p className={date !== undefined ? styles.date : styles.no_data}>{date}</p>
+      <p className={date !== undefined ? styles.date : styles.no_date}>{date}</p>
     </Link>
   );
 }
