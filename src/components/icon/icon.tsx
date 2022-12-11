@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import styles from './icon.module.scss';
 
-export default function Icon(): JSX.Element {
+function Icon(): JSX.Element {
   return (
     <Image
       src='/images/kuresugutaira_icon.jpg'
@@ -12,3 +12,5 @@ export default function Icon(): JSX.Element {
     />
   );
 }
+
+export default Icon;

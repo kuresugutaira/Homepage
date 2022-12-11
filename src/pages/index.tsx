@@ -1,28 +1,17 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.scss';
 import Link from 'next/link';
-import Icon from '../components/utils/icon/icon';
-import NoticeCard from '../components/utils/notice/noticeCard';
+import Icon from '../components/icon/icon';
+import NoticeCard from '../components/noticeCard/noticeCard';
 import Script from 'next/script';
+import Profile from '../components/profile/profile';
 
 function Home() {
   return (
     <>
       <Script async src='https://platform.twitter.com/widgets.js'></Script>
 
-      <div className={styles.profile}>
-        <span className={styles.profile_icon}>
-          <Icon />
-        </span>
-        <div className={styles.profile_self_intro}>
-          <h2>くれすぐたいら</h2>
-          <p>
-            情報工学を専攻している大学3年生です。
-            <br />
-            音楽を聴いたりアニメを見たりするのが好きです。
-          </p>
-        </div>
-      </div>
+      <Profile />
 
       <div className={styles.news_container}>
         <div className={styles.latest_notice}>
