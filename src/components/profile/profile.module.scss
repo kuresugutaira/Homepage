@@ -1,0 +1,28 @@
+.profile {
+  display: flex;
+  min-width: 500px;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.profile_icon {
+  margin: 0 10px;
+}
+
+.profile_self_intro {
+  display: flex;
+  min-width: 400px;
+  flex-flow: column wrap;
+  justify-content: center;
+  margin: 0 10px;
+  h2 {
+    text-align: center;
+    margin: 20px 0;
+    letter-spacing: 1px;
+  }
+  p {
+    text-align: center;
+    margin: 0;
+  }
+}
