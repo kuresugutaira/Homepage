@@ -1,6 +1,7 @@
 import styles from '../styles/about.module.scss';
 import Profile from '../components/profile/profile';
 import LinkCard from '../components/linkCard/linkCard';
+import Image from 'next/link';
 
 function About() {
   return (
@@ -8,7 +9,7 @@ function About() {
       <Profile />
       <div className={styles.linkcard_grid}>
         <LinkCard
-          href='https://twitter.com/Kuresugutaira?s=20&t=uH-DV7Isl6S4EbG-h6YUmg'
+          href='https://twitter.com/Kuresugutaira'
           title='Twitter'
           description='@kuresugutaira'
           iconURL='/images/twitter_icon.png'
@@ -31,6 +32,13 @@ function About() {
           title='Zenn'
           description='kuresugutaira'
           iconURL='/images/zenn_icon.svg'
+          isRoundIcon={false}
+        />
+        <LinkCard
+          href='mailto:contact@kuresugutaira.com'
+          title='Email'
+          description='contact[at]{here.domain}'
+          iconURL='/images/email_icon.png'
           isRoundIcon={false}
         />
       </div>
