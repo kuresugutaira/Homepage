@@ -5,6 +5,7 @@ import Icon from '../components/icon/icon';
 import NoticeCard from '../components/noticeCard/noticeCard';
 import Script from 'next/script';
 import Profile from '../components/profile/profile';
+import Footer from '../components/footer/footer';
 
 function Home() {
   return (
@@ -59,9 +60,7 @@ function Home() {
         </div>
       </div>
 
-      <footer className={styles.footer}>
-        <p>&copy; 2022 kuresugutaira</p>
-      </footer>
+      <Footer />
     </>
   );
 }
