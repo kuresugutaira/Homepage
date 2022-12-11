@@ -1,5 +1,3 @@
-import styles from '../styles/About.module.scss';
-import Icon from '../components/icon/icon';
 import Profile from '../components/profile/profile';
 import LinkCard from '../components/linkCard/linkCard';
 
@@ -7,6 +5,7 @@ function About() {
   return (
     <>
       <Profile />
+
       <LinkCard
         href='https://twitter.com/Kuresugutaira?s=20&t=uH-DV7Isl6S4EbG-h6YUmg'
         title='Twitter'

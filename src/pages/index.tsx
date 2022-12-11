@@ -1,11 +1,8 @@
-import Head from 'next/head';
-import styles from '../styles/Home.module.scss';
+import styles from '../styles/home.module.scss';
 import Link from 'next/link';
-import Icon from '../components/icon/icon';
 import NoticeCard from '../components/noticeCard/noticeCard';
 import Script from 'next/script';
 import Profile from '../components/profile/profile';
-import Footer from '../components/footer/footer';
 
 function Home() {
   return (
