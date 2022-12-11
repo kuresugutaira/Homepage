@@ -1,5 +1,5 @@
-import MainLayout from '../layouts/mainLayout';
-
-export default function About() {
+function Works() {
   return <h1>works</h1>;
 }
+
+export default Works;
