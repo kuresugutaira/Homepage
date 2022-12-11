@@ -1,3 +1,5 @@
+import styles from '../styles/works.module.scss';
+
 function Works() {
   return <h1>works</h1>;
 }
