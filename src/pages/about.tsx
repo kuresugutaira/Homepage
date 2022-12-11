@@ -16,7 +16,7 @@ function About() {
         <LinkCard
           href='https://github.com/kuresugutaira'
           title='GitHub'
-          description='Kuresugutaira'
+          description='kuresugutaira'
           iconURL='/images/github_icon.png'
         />
         <LinkCard
@@ -24,6 +24,13 @@ function About() {
           title='Soundcloud'
           description='gope'
           iconURL='/images/soundcloud_icon.png'
+          isRoundIcon={false}
+        />
+        <LinkCard
+          href='https://zenn.dev/kuresugutaira'
+          title='Zenn'
+          description='kuresugutaira'
+          iconURL='/images/zenn_icon.svg'
           isRoundIcon={false}
         />
       </div>
