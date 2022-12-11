@@ -1,3 +1,4 @@
+import styles from '../styles/about.module.scss';
 import Profile from '../components/profile/profile';
 import LinkCard from '../components/linkCard/linkCard';
 
@@ -5,13 +6,27 @@ function About() {
   return (
     <>
       <Profile />
-
-      <LinkCard
-        href='https://twitter.com/Kuresugutaira?s=20&t=uH-DV7Isl6S4EbG-h6YUmg'
-        title='Twitter'
-        description='くれすぐたいらのTwitter'
-        iconURL='/images/twitter_icon.png'
-      />
+      <div className={styles.linkcard_grid}>
+        <LinkCard
+          href='https://twitter.com/Kuresugutaira?s=20&t=uH-DV7Isl6S4EbG-h6YUmg'
+          title='Twitter'
+          description='@kuresugutaira'
+          iconURL='/images/twitter_icon.png'
+        />
+        <LinkCard
+          href='https://github.com/kuresugutaira'
+          title='GitHub'
+          description='Kuresugutaira'
+          iconURL='/images/github_icon.png'
+        />
+        <LinkCard
+          href='https://soundcloud.com/vyy42cvqfubx'
+          title='Soundcloud'
+          description='gope'
+          iconURL='/images/soundcloud_icon.png'
+          isRoundIcon={false}
+        />
+      </div>
     </>
   );
 }
