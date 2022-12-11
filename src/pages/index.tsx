@@ -31,7 +31,7 @@ function Home() {
             />
             <NoticeCard
               href='https://unityroom.com/games/takarabako-atsume'
-              title='新作ゲーム 宝箱集め を公開しました'
+              title='新作ゲーム 宝箱あつめ を公開しました'
               description='タイルを跳ねながら宝箱を集めていくゲームです'
               date='2021/02/03'
             />
