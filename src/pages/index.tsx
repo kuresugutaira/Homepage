@@ -2,7 +2,7 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.scss';
 import Link from 'next/link';
 import Icon from '../components/utils/icon/icon';
-import Notice from '../components/utils/notice/notice';
+import NoticeCard from '../components/utils/notice/noticeCard';
 import Script from 'next/script';
 
 function Home() {
@@ -31,18 +31,18 @@ function Home() {
             <Link href='notice' className={styles.read_more}>
               もっと見る
             </Link>
-            <Notice
+            <NoticeCard
               href='https://kuresugutaira.com/'
               title='ホームページを一新しました'
               description='変更前より情報が見やすくなりました'
             />
-            <Notice
+            <NoticeCard
               href='https://unityroom.com/games/takarabako-atsume'
               title='新作ゲーム 宝箱集め を公開しました'
               description='タイルを跳ねながら宝箱を集めていくゲームです'
               date='2021/02/03'
             />
-            <Notice
+            <NoticeCard
               href='https://soundcloud.com/vyy42cvqfubx/childlike'
               title='新曲 Childlike を公開しました'
               description='kawaii future bassの曲です'

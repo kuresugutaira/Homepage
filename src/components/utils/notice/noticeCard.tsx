@@ -1,7 +1,7 @@
-import styles from './notice.module.scss';
+import styles from './noticeCard.module.scss';
 import Link from 'next/link';
 
-type NoticeProps = {
+type NoticeCardProps = {
   href: string;
   title: string;
   description: string;
@@ -9,12 +9,14 @@ type NoticeProps = {
   children?: never;
 };
 
-export default function Notice({ href, title, description, date, children }: NoticeProps): JSX.Element {
+function NoticeCard({ href, title, description, date, children }: NoticeCardProps): JSX.Element {
   return (
-    <Link href={href} className={styles.notice}>
+    <Link href={href} className={styles.notice_card}>
       <h2>{title}</h2>
       <p>{description}</p>
       <p className={styles.date}>{date}</p>
     </Link>
   );
 }
+
+export default NoticeCard;
