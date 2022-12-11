@@ -7,9 +7,10 @@ type LinkCardProps = {
   title: string;
   description: string;
   iconURL: string;
+  isRoundIcon?: boolean;
 };
 
-function LinkCard({ href, title, description, iconURL }: LinkCardProps): JSX.Element {
+function LinkCard({ href, title, description, iconURL, isRoundIcon = true }: LinkCardProps): JSX.Element {
   return (
     <Link
       href={href}
@@ -19,6 +20,7 @@ function LinkCard({ href, title, description, iconURL }: LinkCardProps): JSX.Ele
         src={iconURL}
         size={100}
         alt={title + 'のアイコン画像'}
+        isRound={isRoundIcon}
       />
       <div className={styles.text_container}>
         <h2>{title}</h2>

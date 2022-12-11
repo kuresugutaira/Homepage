@@ -9,6 +9,7 @@ function Profile(): JSX.Element {
           src='/images/kuresugutaira_icon.jpg'
           size={200}
           alt='kuresugutairaのアイコン画像'
+          isRound={true}
         />
       </span>
       <div className={styles.profile_self_intro}>

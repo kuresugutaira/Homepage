@@ -6,17 +6,18 @@ type IconProps = {
   src: string;
   size: number | `${number}` | undefined;
   alt: string;
+  isRound?: boolean;
   children?: never;
 };
 
-function Icon({ src, size, alt, children }: IconProps): JSX.Element {
+function Icon({ src, size, alt, isRound, children }: IconProps): JSX.Element {
   return (
     <Image
       src={src}
       height={size}
       width={size}
       alt={alt}
-      className={styles.icon}
+      className={isRound ? styles.round_icon : styles.default_icon}
     />
   );
 }
