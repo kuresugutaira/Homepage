@@ -1,5 +1,20 @@
-import MainLayout from '../layouts/mainLayout';
+import styles from '../styles/About.module.scss';
+import Icon from '../components/icon/icon';
+import Profile from '../components/profile/profile';
+import LinkCard from '../components/linkCard/linkCard';
 
-export default function About() {
-  return <h1>about</h1>;
+function About() {
+  return (
+    <>
+      <Profile />
+      <LinkCard
+        href='https://twitter.com/Kuresugutaira?s=20&t=uH-DV7Isl6S4EbG-h6YUmg'
+        title='Twitter'
+        description='くれすぐたいらのTwitter'
+        iconURL='/images/twitter_icon.png'
+      />
+    </>
+  );
 }
+
+export default About;
