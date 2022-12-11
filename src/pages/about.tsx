@@ -1,7 +1,6 @@
 import styles from 'src/styles/about.module.scss';
 import Profile from 'src/components/profile/profile';
 import LinkCard from 'src/components/linkCard/linkCard';
-import Image from 'next/link';
 
 function About() {
   return (
