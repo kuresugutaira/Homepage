@@ -7,8 +7,7 @@
   justify-content: space-around;
   align-items: center;
   padding: 10px;
-  max-width: 500px;
-  min-width: 300px;
+  width: 500px;
   min-height: 150px;
 }
 
@@ -24,13 +23,5 @@
   }
   p {
     margin: 0px;
-  }
-}
-
-@media (max-width: 500px) {
-  .link_card {
-    border-radius: 30px;
-    flex-flow: column nowrap;
-    max-width: 300px;
   }
 }
