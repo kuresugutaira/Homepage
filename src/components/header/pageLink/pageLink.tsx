@@ -1,4 +1,4 @@
-import styles from './pageLink.module.scss';
+import styles from 'src/components/header/pageLink/pageLink.module.scss';
 import Link from 'next/link';
 
 type PageLinkProps = {
@@ -8,7 +8,10 @@ type PageLinkProps = {
 
 function PageLink({ href, children }: PageLinkProps): JSX.Element {
   return (
-    <Link href={href} className={styles.page_link}>
+    <Link
+      href={href}
+      className={styles.page_link}
+    >
       {children}
     </Link>
   );

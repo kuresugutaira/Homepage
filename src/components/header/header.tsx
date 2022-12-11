@@ -1,5 +1,5 @@
-import styles from './header.module.scss';
-import PageLink from './pageLink/pageLink';
+import styles from 'src/components/header/header.module.scss';
+import PageLink from 'src/components/header/pageLink/pageLink';
 
 function Header() {
   return (

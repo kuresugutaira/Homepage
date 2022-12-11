@@ -1,4 +1,4 @@
-import styles from './noticeCard.module.scss';
+import styles from 'src/components/noticeCard/noticeCard.module.scss';
 import Link from 'next/link';
 
 type NoticeCardProps = {

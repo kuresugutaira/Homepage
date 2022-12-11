@@ -1,4 +1,4 @@
-import styles from './workCard.module.scss';
+import styles from 'src/components/workCard/workCard.module.scss';
 import Image from 'next/image';
 import Link from 'next/link';
 

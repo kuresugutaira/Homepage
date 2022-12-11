@@ -1,5 +1,5 @@
-import styles from '../styles/works.module.scss';
-import WorkCard from '../components/WorkCard/workCard';
+import styles from 'src/styles/works.module.scss';
+import WorkCard from 'src/components/workCard/workCard';
 
 function Works() {
   return (
