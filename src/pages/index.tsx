@@ -1,4 +1,4 @@
-import styles from 'src/styles/home.module.scss';
+import styles from '../styles/home.module.scss';
 import Link from 'next/link';
 import NoticeCard from 'src/components/noticeCard/noticeCard';
 import Script from 'next/script';
