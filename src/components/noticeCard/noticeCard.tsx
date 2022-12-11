@@ -11,10 +11,13 @@ type NoticeCardProps = {
 
 function NoticeCard({ href, title, description, date, children }: NoticeCardProps): JSX.Element {
   return (
-    <Link href={href} className={styles.notice_card}>
+    <Link
+      href={href}
+      className={styles.notice_card}
+    >
       <h2>{title}</h2>
-      <p>{description}</p>
-      <p className={styles.date}>{date}</p>
+      <p className={styles.description}>{description}</p>
+      <p className={date !== undefined ? styles.date : styles.no_data}>{date}</p>
     </Link>
   );
 }

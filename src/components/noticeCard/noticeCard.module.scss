@@ -1,12 +1,26 @@
 .notice_card {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
   border-radius: 30px;
   border-color: white;
   border: solid 1px;
   margin-bottom: 20px;
+  h2 {
+    margin: 10px 0;
+  }
+}
+
+.description {
+  margin: 5px 0;
 }
 
 .date {
   font-size: small;
   text-align: right;
-  margin-right: 20px;
+  margin: 0 20px 5px 0;
+}
+
+.no_data {
+  margin: 0 0 5px 0;
 }
