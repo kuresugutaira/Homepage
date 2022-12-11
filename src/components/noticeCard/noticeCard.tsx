@@ -9,7 +9,7 @@ type NoticeCardProps = {
   children?: never;
 };
 
-function NoticeCard({ href, title, description, date, children }: NoticeCardProps): JSX.Element {
+function NoticeCard({ href, title, description, date }: NoticeCardProps): JSX.Element {
   return (
     <Link
       href={href}
