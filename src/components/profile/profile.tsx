@@ -5,7 +5,11 @@ function Profile(): JSX.Element {
   return (
     <div className={styles.profile}>
       <span className={styles.profile_icon}>
-        <Icon />
+        <Icon
+          src='/images/kuresugutaira_icon.jpg'
+          size={200}
+          alt='kuresugutairaのアイコン画像'
+        />
       </span>
       <div className={styles.profile_self_intro}>
         <h2>くれすぐたいら</h2>
