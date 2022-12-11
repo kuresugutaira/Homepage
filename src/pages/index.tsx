@@ -1,8 +1,8 @@
-import styles from '../styles/home.module.scss';
+import styles from 'src/styles/home.module.scss';
 import Link from 'next/link';
-import NoticeCard from '../components/noticeCard/noticeCard';
+import NoticeCard from 'src/components/noticeCard/noticeCard';
 import Script from 'next/script';
-import Profile from '../components/profile/profile';
+import Profile from 'src/components/profile/profile';
 
 function Home() {
   return (

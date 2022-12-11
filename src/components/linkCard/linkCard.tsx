@@ -1,6 +1,6 @@
-import styles from './linkCard.module.scss';
+import styles from 'src/components/linkCard/linkCard.module.scss';
 import Link from 'next/link';
-import Icon from '../icon/icon';
+import Icon from 'src/components/icon/icon';
 
 type LinkCardProps = {
   href: string;

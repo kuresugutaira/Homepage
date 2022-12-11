@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import styles from './icon.module.scss';
+import styles from 'src/components/icon/icon.module.scss';
 
 // number | `&{number}` はImageのheight・widthが受け取るSafeNumber型と同じ型
 type IconProps = {

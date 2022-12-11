@@ -1,5 +1,5 @@
-import styles from './profile.module.scss';
-import Icon from '../icon/icon';
+import styles from 'src/components/profile/profile.module.scss';
+import Icon from 'src/components/icon/icon';
 
 function Profile(): JSX.Element {
   return (
