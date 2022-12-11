@@ -1,7 +1,6 @@
-import Image from 'next/image';
 import styles from 'src/components/icon/icon.module.scss';
 
-// number | `&{number}` はImageのheight・widthが受け取るSafeNumber型と同じ型
+// number | `&{number}` はimgのheight・widthが受け取るSafeNumber型と同じ型
 type IconProps = {
   src: string;
   size: number | `${number}` | undefined;
@@ -12,7 +11,7 @@ type IconProps = {
 
 function Icon({ src, size, alt, isRound, children }: IconProps): JSX.Element {
   return (
-    <Image
+    <img
       src={src}
       height={size}
       width={size}
