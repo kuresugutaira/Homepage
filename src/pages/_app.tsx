@@ -1,4 +1,4 @@
-import 'src/styles/globals.scss';
+import '../styles/globals.scss';
 import type { AppProps } from 'next/app';
 import MainLayout from 'src/layouts/mainLayout';
 

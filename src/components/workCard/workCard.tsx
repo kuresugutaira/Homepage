@@ -1,5 +1,5 @@
-import styles from 'src/components/workCard/workCard.module.scss';
-import Image from 'next/image';
+import styles from './workCard.module.scss';
+
 import Link from 'next/link';
 
 type WorkCardProps = {
@@ -15,7 +15,7 @@ function WorkCard({ href, imageURL, title, children }: WorkCardProps): JSX.Eleme
       href={href}
       className={styles.card}
     >
-      <Image
+      <img
         src={imageURL}
         alt={title + 'の画像'}
         height={150}

@@ -1,4 +1,4 @@
-import styles from 'src/styles/notice.module.scss';
+import styles from '../styles/notice.module.scss';
 import NoticeCard from 'src/components/noticeCard/noticeCard';
 
 function Notice() {
