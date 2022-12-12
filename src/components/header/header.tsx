@@ -1,4 +1,4 @@
-import styles from 'src/components/header/header.module.scss';
+import styles from './header.module.scss';
 import PageLink from 'src/components/header/pageLink/pageLink';
 
 function Header() {

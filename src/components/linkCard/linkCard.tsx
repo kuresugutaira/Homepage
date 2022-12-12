@@ -1,4 +1,4 @@
-import styles from 'src/components/linkCard/linkCard.module.scss';
+import styles from './linkCard.module.scss';
 import Link from 'next/link';
 import Icon from 'src/components/icon/icon';
 

@@ -1,4 +1,4 @@
-import styles from 'src/styles/works.module.scss';
+import styles from '../styles/works.module.scss';
 import WorkCard from 'src/components/workCard/workCard';
 
 function Works() {

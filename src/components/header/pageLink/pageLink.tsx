@@ -1,4 +1,4 @@
-import styles from 'src/components/header/pageLink/pageLink.module.scss';
+import styles from './pageLink.module.scss';
 import Link from 'next/link';
 
 type PageLinkProps = {
