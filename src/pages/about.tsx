@@ -10,7 +10,7 @@ function About() {
         <LinkCard
           href='https://twitter.com/Kuresugutaira'
           title='Twitter'
-          description='@kuresugutaira'
+          description='kuresugutaira'
           iconURL='/images/twitter_icon.png'
         />
         <LinkCard
