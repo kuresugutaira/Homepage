@@ -22,7 +22,7 @@ function About() {
         <LinkCard
           href='https://soundcloud.com/vyy42cvqfubx'
           title='Soundcloud'
-          description='gope'
+          description='iepog'
           iconURL='/images/soundcloud_icon.png'
           isRoundIcon={false}
         />
