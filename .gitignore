@@ -37,3 +37,6 @@ next-env.d.ts
 
 # data以下のフォルダ
 data/
+
+# 環境変数ファイル
+.env.local
