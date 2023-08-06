@@ -23,7 +23,7 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
 };
 
 function About({ about }: Props) {
-  // Aboutのリンクカードのリスト
+  // about_list: Aboutのリンクカードのリスト
   // ビルド時にDBからとってきたaboutのデータを
   // LinkCardコンポーネントに変換してabout_listに入れる
   const about_list: JSX.Element[] = [];

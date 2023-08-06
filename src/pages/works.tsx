@@ -34,7 +34,10 @@ function Works({ works }: Props) {
         imageURL={e.imageURL.url}
         title={e.title}
       >
-        {BackSlashNToBR(e.description)}
+        {
+          // 改行文字('\n')は改行タグ(<br>)に変える
+          BackSlashNToBR(e.description)
+        }
       </WorkCard>,
     );
   }

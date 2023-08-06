@@ -38,6 +38,7 @@ function Home({ notice }: Props) {
         href={e.link}
         title={e.title}
         description={e.description}
+        // dateはyyyy-MM-ddの形にして表示する
         date={SimplifyDate(e.date)}
       />,
     );
