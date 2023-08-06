@@ -9,7 +9,7 @@ import { SimplifyDate } from 'src/utils/util';
 import type { Notice } from 'src/types/notice';
 
 export const getStaticProps: GetStaticProps<Props> = async () => {
-  // お知らせのデータを3件、新しい順に取得する
+  // Noticeのデータを3件、新しい順に取得する
   const data = await client.get({
     endpoint: 'notice',
     queries: { limit: 3, orders: '-date' },
