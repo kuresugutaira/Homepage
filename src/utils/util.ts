@@ -11,3 +11,8 @@ export function SimplifyDate(date_str: string): string {
     '-',
   );
 }
+
+// 画像のファイル名からその画像にアクセスするためのパスを返す
+export function ImageFileNameToURL(imageFileName: string): string {
+  return `/images/${imageFileName}`;
+}

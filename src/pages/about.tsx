@@ -4,6 +4,7 @@ import LinkCard from 'src/components/linkCard/linkCard';
 import { client } from 'src/libs/client';
 import type { About } from 'src/types/about';
 import { GetStaticProps } from 'next';
+import { ImageFileNameToURL } from 'src/utils/util';
 
 type Props = {
   about: About[];
@@ -21,10 +22,6 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
     },
   };
 };
-
-function ImageFileNameToURL(imageFileName: string): string {
-  return `/images/${imageFileName}`;
-}
 
 function About({ about }: Props) {
   // Aboutのリンクカードのリスト
