@@ -10,7 +10,7 @@ type Props = {
 };
 
 export const getStaticProps: GetStaticProps<Props> = async () => {
-  // Aboutのデータを全部取得する
+  // Worksのデータを全部取得する
   const data = await client.get({
     endpoint: 'works',
   });
