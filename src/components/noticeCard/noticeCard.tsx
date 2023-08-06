@@ -5,7 +5,7 @@ type NoticeCardProps = {
   href: string;
   title: string;
   description: string;
-  date?: string;
+  date: string;
   children?: never;
 };
 
