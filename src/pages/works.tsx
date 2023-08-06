@@ -3,7 +3,7 @@ import styles from '../styles/works.module.scss';
 import WorkCard from 'src/components/workCard/workCard';
 import { GetStaticProps } from 'next';
 import { client } from 'src/libs/client';
-import { BackSlashNToBR, ImageFileNameToURL } from 'src/utils/util';
+import { BackSlashNToBR } from 'src/utils/util';
 
 type Props = {
   works: Work[];
@@ -31,7 +31,7 @@ function Works({ works }: Props) {
     work_list.push(
       <WorkCard
         href={e.link}
-        imageURL={ImageFileNameToURL(e.imageFileName)}
+        imageURL={e.imageURL.url}
         title={e.title}
       >
         {BackSlashNToBR(e.description)}

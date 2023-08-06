@@ -4,7 +4,6 @@ import LinkCard from 'src/components/linkCard/linkCard';
 import { client } from 'src/libs/client';
 import type { About } from 'src/types/about';
 import { GetStaticProps } from 'next';
-import { ImageFileNameToURL } from 'src/utils/util';
 
 type Props = {
   about: About[];
@@ -29,12 +28,13 @@ function About({ about }: Props) {
   // LinkCardコンポーネントに変換してabout_listに入れる
   const about_list: JSX.Element[] = [];
   for (const e of about) {
+    console.log(e.imageURL.url);
     about_list.push(
       <LinkCard
         href={e.link}
         title={e.title}
         description={e.acountName}
-        iconURL={ImageFileNameToURL(e.iconImageFileName)}
+        iconURL={e.imageURL.url}
         isRoundIcon={e.isRoundIcon}
       />,
     );
