@@ -23,6 +23,9 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
 };
 
 function Works({ works }: Props) {
+  // work_list: WorkCardコンポーネントのリスト
+  // ビルド時にgetStaticPropsで持ってきたデータ(works)を
+  // WorkCardコンポーネントに変換してwork_listに入れる
   const work_list: JSX.Element[] = [];
   for (const e of works) {
     work_list.push(
