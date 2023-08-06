@@ -1,10 +1,61 @@
+import { GetStaticProps } from 'next';
 import styles from '../styles/home.module.scss';
 import Link from 'next/link';
 import NoticeCard from 'src/components/noticeCard/noticeCard';
 import Script from 'next/script';
 import Profile from 'src/components/profile/profile';
+import { client } from 'src/libs/client';
+import type { Notice } from 'src/types/notice';
 
-function Home() {
+export const getStaticProps: GetStaticProps<Props> = async () => {
+  // お知らせのデータを3件、新しい順に取得する
+  const data = await client.get({
+    endpoint: 'notice',
+    queries: { limit: 3, orders: '-date' },
+  });
+
+  return {
+    props: {
+      notice: data.contents,
+    },
+  };
+};
+
+// numOfDigitsの桁数に合わせてvalをゼロパディングする
+// ZeroPadding(28, 4) -> "0028"
+function ZeroPadding(val: number, numOfDigits: number): string {
+  return val.toString().padStart(numOfDigits, '0');
+}
+
+// DBからもってきたDateの情報をyyyy-MM-ddの形にする
+function SimplifyDate(date_str: string): string {
+  const date = new Date(date_str);
+  return [ZeroPadding(date.getFullYear(), 4), ZeroPadding(date.getMonth() + 1, 2), ZeroPadding(date.getDate(), 2)].join(
+    '-',
+  );
+}
+
+type Props = {
+  notice: Notice[];
+};
+
+function Home({ notice }: Props) {
+  // notice_list: NoticeCardコンポーネントのリスト
+  // ビルド時にgetStaticPropsで持ってきたデータ(notice)を
+  // NoticeCardコンポーネントに変換してnotice_listに入れる
+  const notice_list: JSX.Element[] = [];
+  for (let i = 2; i >= 0; i--) {
+    const e = notice[i];
+    notice_list.push(
+      <NoticeCard
+        href={e.link}
+        title={e.title}
+        description={e.description}
+        date={SimplifyDate(e.date)}
+      />,
+    );
+  }
+
   return (
     <>
       <Script
@@ -24,24 +75,7 @@ function Home() {
             >
               もっと見る
             </Link>
-            <NoticeCard
-              href='https://soundcloud.com/vyy42cvqfubx/childlike'
-              title='新曲 Childlike を公開しました'
-              description='kawaii future bassです'
-              date='2021/3/25'
-            />
-            <NoticeCard
-              href='https://soundcloud.com/vyy42cvqfubx/iigjgjz6smtm'
-              title='新曲 夏と宇宙 を公開しました'
-              description='夏と宇宙をイメージしました'
-              date='2021/12/3'
-            />
-            <NoticeCard
-              href='https://soundcloud.com/vyy42cvqfubx/bright-highway'
-              title='新曲 Bright Highway を公開しました'
-              description='DnB(仮)です'
-              date='2022/1/3'
-            />
+            {notice_list}
           </div>
         </div>
         <div className={styles.twitter}>
