@@ -5,6 +5,7 @@ import NoticeCard from 'src/components/noticeCard/noticeCard';
 import Script from 'next/script';
 import Profile from 'src/components/profile/profile';
 import { client } from 'src/libs/client';
+import { SimplifyDate } from 'src/utils/util';
 import type { Notice } from 'src/types/notice';
 
 export const getStaticProps: GetStaticProps<Props> = async () => {
@@ -20,20 +21,6 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
     },
   };
 };
-
-// numOfDigitsの桁数に合わせてvalをゼロパディングする
-// ZeroPadding(28, 4) -> "0028"
-function ZeroPadding(val: number, numOfDigits: number): string {
-  return val.toString().padStart(numOfDigits, '0');
-}
-
-// DBからもってきたDateの情報をyyyy-MM-ddの形にする
-function SimplifyDate(date_str: string): string {
-  const date = new Date(date_str);
-  return [ZeroPadding(date.getFullYear(), 4), ZeroPadding(date.getMonth() + 1, 2), ZeroPadding(date.getDate(), 2)].join(
-    '-',
-  );
-}
 
 type Props = {
   notice: Notice[];
