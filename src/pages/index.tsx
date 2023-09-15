@@ -67,7 +67,7 @@ function Home({ notice }: Props) {
           </div>
         </div>
         <div className={styles.twitter}>
-          <h2>Twitter</h2>
+          <h2>X</h2>
           <a
             className='twitter-timeline'
             data-lang='ja'
